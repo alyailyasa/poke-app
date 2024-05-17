@@ -74,8 +74,8 @@ const HomePage = () => {
           </svg>
         </div>
       </div>
-      <h1 className="text-4xl font-bold mb-8 text-center">Pokemon App</h1>
-      <div className="mt-24 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+      <h1 className="text-2xl font-bold mb-8 text-center">Pokemon App</h1>
+      <div className="mt-16 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
         {filteredPokemons.map((pokemon) => (
           <Link key={pokemon.id} href={`/detail/${pokemon.id}`}>
             <div className="border border-[#d67eff] shadow-md hover:shadow-lg transition flex flex-col">
