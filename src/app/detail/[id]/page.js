@@ -104,7 +104,7 @@ const PokemonDetails = () => {
               <div className="flex flex-col gap-1 text-md">
                 <div className="flex flex-row gap-2">
                   {pokemon.types.map(({ type }) => (
-                    <p key={type.name} className={`text-white text-sm px-3 py-1 rounded-xl ${typeColors[type.name]}`}>
+                    <p key={type.name} className={`text-neutral-200 text-sm px-3 py-1 rounded-xl ${typeColors[type.name]}`}>
                       {type.name}
                     </p>
                   ))}

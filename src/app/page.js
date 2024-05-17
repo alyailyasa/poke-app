@@ -74,8 +74,8 @@ const HomePage = () => {
           </svg>
         </div>
       </div>
-      <h1 className="text-2xl font-bold mb-8 text-center">Pokemon App</h1>
-      <div className="mt-16 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+      <h1 className="lg:text-4xl text-xl font-bold mb-8 text-center">Pokemon App</h1>
+      <div className="lg:mt-24 mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
         {filteredPokemons.map((pokemon) => (
           <Link key={pokemon.id} href={`/detail/${pokemon.id}`}>
             <div className="border border-[#d67eff] shadow-md hover:shadow-lg transition flex flex-col">
@@ -85,7 +85,7 @@ const HomePage = () => {
               <h3 className="text-lg font-semibold capitalize p-4">{pokemon.name}</h3>
               <div className="bg-[#d67eff] flex flex-row gap-2 justify-center p-1">
                 {pokemon.types.map((type) => (
-                  <span key={type} className={`text-white text-sm px-3 py-0 rounded-xl ${typeColors[type]}`}>
+                  <span key={type} className={`text-neutral-200 text-sm px-3 py-0 rounded-xl ${typeColors[type]}`}>
                     {type}
                   </span>
                 ))}
